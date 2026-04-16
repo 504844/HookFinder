@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.agent;
 
 /**
  * Static holder for the transformer instance.

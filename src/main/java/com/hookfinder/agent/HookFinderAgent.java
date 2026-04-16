@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.agent;
 
 import java.lang.instrument.Instrumentation;
 

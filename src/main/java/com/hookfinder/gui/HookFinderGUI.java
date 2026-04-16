@@ -1,4 +1,7 @@
-package com.hookfinder;
+package com.hookfinder.gui;
+
+import com.hookfinder.core.*;
+import com.hookfinder.util.RuneLiteLocator;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 

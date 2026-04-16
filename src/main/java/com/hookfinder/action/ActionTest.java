@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.action;
 
 import java.util.ArrayList;
 import java.util.List;

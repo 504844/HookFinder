@@ -1,4 +1,6 @@
-package com.hookfinder;
+package com.hookfinder.core;
+
+import com.hookfinder.pattern.*;
 
 import java.io.File;
 import java.net.URLClassLoader;

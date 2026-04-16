@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.agent;
 
 import org.objectweb.asm.*;
 import org.objectweb.asm.commons.AdviceAdapter;
@@ -9,7 +9,7 @@ public class TracingMethodVisitor extends AdviceAdapter {
     private final String methodName;
     private final String methodDesc;
 
-    private static final String HOLDER = "com/hookfinder/TransformerHolder";
+    private static final String HOLDER = "com/hookfinder/agent/TransformerHolder";
 
     public TracingMethodVisitor(MethodVisitor mv, int access, String name, String desc,
                                 String className, TracingTransformer transformer) {

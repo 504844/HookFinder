@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.core;
 
 import java.lang.reflect.Method;
 import java.util.List;

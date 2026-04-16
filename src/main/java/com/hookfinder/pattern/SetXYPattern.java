@@ -1,4 +1,6 @@
-package com.hookfinder;
+package com.hookfinder.pattern;
+
+import com.hookfinder.core.*;
 
 import org.objectweb.asm.*;
 

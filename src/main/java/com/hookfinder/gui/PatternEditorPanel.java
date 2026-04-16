@@ -1,4 +1,6 @@
-package com.hookfinder;
+package com.hookfinder.gui;
+
+import com.hookfinder.core.PatternDefinition;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
