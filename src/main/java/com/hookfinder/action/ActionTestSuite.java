@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.action;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

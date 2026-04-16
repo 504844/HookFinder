@@ -25,8 +25,8 @@ jar {
     manifest {
         attributes(
                 'Main-Class': 'com.hookfinder.Main',
-                'Premain-Class': 'com.hookfinder.HookFinderAgent',
-                'Agent-Class': 'com.hookfinder.HookFinderAgent',
+                'Premain-Class': 'com.hookfinder.agent.HookFinderAgent',
+                'Agent-Class': 'com.hookfinder.agent.HookFinderAgent',
                 'Can-Redefine-Classes': 'true',
                 'Can-Retransform-Classes': 'true'
         )
@@ -41,8 +41,8 @@ task fatJar(type: Jar) {
     manifest {
         attributes(
                 'Main-Class': 'com.hookfinder.Main',
-                'Premain-Class': 'com.hookfinder.HookFinderAgent',
-                'Agent-Class': 'com.hookfinder.HookFinderAgent',
+                'Premain-Class': 'com.hookfinder.agent.HookFinderAgent',
+                'Agent-Class': 'com.hookfinder.agent.HookFinderAgent',
                 'Can-Redefine-Classes': 'true',
                 'Can-Retransform-Classes': 'true'
         )

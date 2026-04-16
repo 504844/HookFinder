@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.util;
 
 import java.io.File;
 import java.nio.file.DirectoryStream;

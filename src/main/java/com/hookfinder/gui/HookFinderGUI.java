@@ -1,4 +1,7 @@
-package com.hookfinder;
+package com.hookfinder.gui;
+
+import com.hookfinder.core.*;
+import com.hookfinder.util.RuneLiteLocator;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 
@@ -558,7 +561,7 @@ public class HookFinderGUI extends JFrame {
 
         private void buildUI() {
             tableModel = new DefaultTableModel(
-                    new String[]{"Pattern", "Class", "Method", "Details"}, 0) {
+                    new String[]{"Pattern", "Class", "Method / Field", "Details"}, 0) {
                 @Override
                 public boolean isCellEditable(int r, int c) {
                     return false;

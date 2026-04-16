@@ -1,4 +1,6 @@
-package com.hookfinder;
+package com.hookfinder.core;
+
+import com.hookfinder.pattern.*;
 
 import java.io.File;
 import java.net.URLClassLoader;
@@ -31,7 +33,7 @@ public class HookFinder {
 
     public void registerBuiltinPatterns() {
         patterns.add(new InvokeMenuActionPattern());
-        patterns.add(new SetXYPattern());
+        patterns.add(new SceneTilePattern());
         patterns.add(new ViewportWalkingPattern());
         patterns.add(new CheckClickPattern());
         patterns.add(new IsMovingPattern());

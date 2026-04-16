@@ -1,4 +1,4 @@
-package com.hookfinder;
+package com.hookfinder.agent;
 
 import com.sun.tools.attach.AttachNotSupportedException;
 import com.sun.tools.attach.VirtualMachine;

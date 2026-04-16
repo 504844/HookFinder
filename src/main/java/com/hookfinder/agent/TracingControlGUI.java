@@ -1,4 +1,6 @@
-package com.hookfinder;
+package com.hookfinder.agent;
+
+import com.hookfinder.action.*;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 

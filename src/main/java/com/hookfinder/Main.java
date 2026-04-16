@@ -1,5 +1,9 @@
 package com.hookfinder;
 
+import com.hookfinder.gui.HookFinderGUI;
+import com.hookfinder.agent.AgentAttacher;
+import com.hookfinder.core.HookFinder;
+
 import java.io.File;
 import java.net.URL;
 import java.net.URLClassLoader;

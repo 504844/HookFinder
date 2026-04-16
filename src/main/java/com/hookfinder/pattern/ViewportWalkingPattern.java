@@ -1,4 +1,6 @@
-package com.hookfinder;
+package com.hookfinder.pattern;
+
+import com.hookfinder.core.*;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
