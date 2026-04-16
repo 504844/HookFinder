@@ -78,29 +78,21 @@ public class PatternStore {
         invoke.setExtractJunkValue(true);
         defaults.add(invoke);
 
-        // SetSelectedSceneTileX
-        PatternDefinition setX = new PatternDefinition();
-        setX.setName("setSelectedSceneTileX");
-        setX.setDescription("Public instance method returning long, 3 int params, high complexity");
-        setX.setVisibility(PatternDefinition.Visibility.PUBLIC);
-        setX.setScope(PatternDefinition.Scope.INSTANCE);
-        setX.setReturnType(PatternDefinition.ReturnType.LONG);
-        setX.setParamCount(3);
-        setX.setParamTypes(List.of("int", "int", "int"));
-        setX.setMinInstructionCount(50);
-        defaults.add(setX);
-
-        // setSelectedSceneTileY
-        PatternDefinition setY = new PatternDefinition();
-        setY.setName("setSelectedSceneTileY");
-        setY.setDescription("Public instance method returning long, 3 int params, accesses .ad field");
-        setY.setVisibility(PatternDefinition.Visibility.PUBLIC);
-        setY.setScope(PatternDefinition.Scope.INSTANCE);
-        setY.setReturnType(PatternDefinition.ReturnType.LONG);
-        setY.setParamCount(3);
-        setY.setParamTypes(List.of("int", "int", "int"));
-        setY.setRequiredFieldAccesses(List.of(".ad"));
-        defaults.add(setY);
+        // SceneTile (X/Y/Walking) - bytecode-based pattern
+        // Finds the walking method void(int,int,int,boolean) and extracts:
+        //   setViewportWalkingFieldHook (static boolean field)
+        //   setSelectedSceneTileX (static int field set to -1)
+        //   setSelectedSceneTileY (static int field set to -1)
+        PatternDefinition sceneTile = new PatternDefinition();
+        sceneTile.setName("SceneTile (X/Y/Walking)");
+        sceneTile.setDescription("Finds walking method void(int,int,int,boolean) "
+                + "and extracts viewportWalking, tileX, tileY field hooks via bytecode");
+        sceneTile.setVisibility(PatternDefinition.Visibility.PUBLIC);
+        sceneTile.setScope(PatternDefinition.Scope.INSTANCE);
+        sceneTile.setReturnType(PatternDefinition.ReturnType.VOID);
+        sceneTile.setParamCount(4);
+        sceneTile.setParamTypes(List.of("int", "int", "int", "boolean"));
+        defaults.add(sceneTile);
 
         // ViewportWalking
         PatternDefinition vp = new PatternDefinition();

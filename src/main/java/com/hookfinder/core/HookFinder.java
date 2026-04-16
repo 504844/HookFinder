@@ -33,7 +33,7 @@ public class HookFinder {
 
     public void registerBuiltinPatterns() {
         patterns.add(new InvokeMenuActionPattern());
-        patterns.add(new SetXYPattern());
+        patterns.add(new SceneTilePattern());
         patterns.add(new ViewportWalkingPattern());
         patterns.add(new CheckClickPattern());
         patterns.add(new IsMovingPattern());
